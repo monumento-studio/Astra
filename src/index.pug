@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title astra
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+        meta(name="description" content="")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+    body
+      .container#home
+        include _partials/menu
+        .home
+          .overlay
+            .izquierda
+              .iz-img#iz-img1(style="background-image: url('/img/i-01.jpg');")
+              .iz-img#iz-img2(style="background-image: url('/img/i-02.jpg');")
+              .iz-img#iz-img3(style="background-image: url('/img/i-03.jpg');")
+            .derecha
+              .de-img#de-img1(style="background-image: url('/img/d-01.jpg');")
+              .de-img#de-img2(style="background-image: url('/img/d-02.jpg');")
+              .de-img#de-img3(style="background-image: url('/img/d-03.jpg');")
+          .word
+            img(src="./img/word.svg", alt="Word astra")
+
+        include _partials/footer
