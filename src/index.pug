@@ -13,10 +13,13 @@ html
         include _partials/menu
         .home
           .overlay
-            .izquierda
-              .iz-img#iz-img1(style="background-image: url('/img/i-01.jpg');")
-              .iz-img#iz-img2(style="background-image: url('/img/i-02.jpg');")
-              .iz-img#iz-img3(style="background-image: url('/img/i-03.jpg');")
+            .izquierda.owl-carousel.owl-theme
+              .iz-img#iz-img1
+                img(src="/img/i-01.jpg" alt="Astra")
+              .iz-img#iz-img2
+                img(src="/img/i-02.jpg" alt="Astra")
+              .iz-img#iz-img3
+                img(src="/img/i-03.jpg" alt="Astra")
             .derecha
               .de-img#de-img1(style="background-image: url('/img/d-01.jpg');")
               .de-img#de-img2(style="background-image: url('/img/d-02.jpg');")

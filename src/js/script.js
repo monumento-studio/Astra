@@ -13,17 +13,13 @@ $(function () {
 	
 
 
-	$(function () {
-		var $element = $('#iz-img1');
-		setInterval(function () {
-			$element.fadeIn(1000, function () {
-				$element.fadeOut(1500, function () {
-					$element.delay(15000).fadeIn(1500)
-				});
-			});
-		}, 5000);
+	$('.izquierda').owlCarousel({
+		loop:true,
+		margin:0,
+		nav:false,
+		autoplay: true,
+		
 	});
-
 
 
 });
