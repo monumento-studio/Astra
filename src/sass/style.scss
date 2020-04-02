@@ -8,16 +8,13 @@
 
 @import "02-general/reset";
 @import "02-general/general";
-@import "02-general/core";
-@import "02-general/animate";
-@import "02-general/lazyload";
-@import "02-general/autoheight";
-@import "02-general/owl.carousel";
 
 
 
 //03-elementos
 
+@import "03-elements/slider";
+@import "03-elements/grid";
 @import "03-elements/headings";
 @import "03-elements/text";
 @import "03-elements/anchor";
@@ -29,3 +26,5 @@
 //04-pages
 
 @import "04-pages/home";
+@import "04-pages/nosotros";
+@import "04-pages/proyectos";

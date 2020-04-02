@@ -1,0 +1,68 @@
+#proyectos
+    #menu
+        ul
+            li
+                &:nth-child(2)
+                    a
+                        border-bottom: solid 1px black
+    .lead
+        background-color: $gray
+        margin-top: 120px
+        background: $gray
+        text-align: center
+        .element.text
+            display: grid
+            grid-template-columns: repeat(16,1fr)
+            padding: 100px 0
+            h1
+                grid-column: 3/15
+                font-size: 4rem
+    .proyectos
+        background-color: $gray
+        .half
+            .element
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                background-size: cover
+                background-position: center
+                text-align: center
+                a
+                    font-size: 3.5rem
+                    font-family: $neue-light
+                    &:hover
+                        text-decoration: underline
+                        color: $white
+@media (max-width: 990px)
+    #proyectos
+        #menu
+            ul
+                li
+                    &:nth-child(2)
+                        a
+                            border-bottom: solid 1px white !important
+        .lead
+            margin-top: 80px
+@media (max-width: 750px)
+    #proyectos
+        .lead
+            .element.text
+                h1
+                    grid-column: 1/-1
+                    font-size: 3rem
+        .proyectos
+            background-color: $gray
+            padding-bottom: 50px
+            .half
+                grid-gap: 20px
+                .element
+                    height: 400px !important
+                    border: none
+                    a
+                        color: $white
+                        font-size: 2.5rem
+                        font-family: $neue-light
+                        &:hover
+                            text-decoration: underline
+                            color: $white

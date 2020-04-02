@@ -3,34 +3,115 @@
     top: 0
     left: 0
     background: $white
-    display: flex
-    flex-direction: row
-    justify-content: center
     width: 100%
     height: 120px
     padding: 20px
     box-sizing: border-box
     z-index: 1
-    .left
-        width: 33.3%
+    .mov
+        display: none
+    .desk
         display: flex
         flex-direction: row
-        .icon
-            width: 25px
-            img
-        .description
-            margin-left: 15px
-            width: 69%
-    .center
-        width: 33.3%
-        a.logo
-            width: 180px
-            margin: 0 auto
+        justify-content: center
+        .left
+            width: 33.3%
+            display: flex
+            flex-direction: row
+            .icon
+                width: 25px
+                img
+            .description
+                margin-left: 15px
+                width: 69%
+        .center
+            width: 33.3%
+            a.logo
+                width: 180px
+                margin: 0 auto
+                display: block
+        .right
+            width: 33%
+            ul
+                text-align: right
+                li
+                    display: inline
+                    margin-left: 20px
+@media (max-width: 990px)
+    .clicked
+        height: 400px !important
+        background: $green !important
+        .mov
+            .logo
+                svg
+                    path
+                        fill: $white
+                        transition: all 350ms ease-in-out
+            .hamburger
+                top: 40px !important
+                transition: all 350ms ease-in-out
+                .line
+                    background: $white !important
+                    transition: all 350ms ease-in-out
+                    &:first-child
+                        transform: rotate(45deg)
+                        transition: all 350ms ease-in-out
+                    &:last-child
+                        transform: rotate(-45deg)
+                        top: 0 !important
+                        transition: all 350ms ease-in-out
+                    &:nth-child(2)
+                        opacity: 0 !important
+                        transition: all 350ms ease-in-out
+    #menu
+        position: fixed
+        top: 0
+        left: 0
+        background: $white
+        width: 100%
+        height: 80px
+        padding: 20px
+        box-sizing: border-box
+        z-index: 1
+        transition: all 350ms ease-in-out
+        overflow: hidden
+        .desk
+            display: none 
+        .mov
             display: block
-    .right
-        width: 33%
-        ul
-            text-align: right
-            li
-                display: inline
-                margin-left: 20px
+            .hamburger
+                position: absolute
+                top: 25px
+                width: 30px
+                height: 25px
+                transition: all 350ms ease-in-out
+                cursor: pointer
+                .line
+                    position: absolute
+                    width: 100%
+                    height: 1px
+                    background: black
+                    margin-bottom: 10px
+                    opacity: 1
+                    transition: all 350ms ease-in-out
+                    &:first-child
+                        top: 0
+                    &:last-child
+                        top: 20px
+                    &:nth-child(2)
+                        top: 10px
+            .logo
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 20px
+                svg
+                    width: 100px
+            .links
+                margin-top: 80px
+                ul
+                    li
+                        margin-bottom: 50px
+                        a
+                            font-size: 2rem
+                            color: $white

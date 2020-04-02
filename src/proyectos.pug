@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        title Astra | Proyectos
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+        meta(name="description" content="")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet", href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+    body
+      .container#proyectos
+        include _partials/menu
+        .lead
+            .contenedor
+                .element.text
+                    h1 Creamos espacios que promueven la convivencia, la calidad de vida y la armonía ambiental.
+        .proyectos
+            .contenedor.half
+                .element.text#1
+                    a(href="#") nativa
+                .element.text#2
+                    a(href="#") la escondida
+                .element.text#3
+                    a(href="#") Proyecto x
+                .element.text#4
+                    a(href="#") proyecto x
+            
+        include _partials/footer
