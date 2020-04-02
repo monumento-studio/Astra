@@ -161,14 +161,14 @@ $("#nosotros .element#12 .uno .arrow").on("click", function(){
 
 if (window.matchMedia('(max-width: 750px)').matches)
 {
-	$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-01.jpg")');
+	$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-03.png")');
 	$("#proyectos .proyectos .half #2").css("background-image", 'url("../img/d-02.jpg")');
 	$("#proyectos .proyectos .half #3").css("background-image", 'url("../img/i-01.jpg")');
 	$("#proyectos .proyectos .half #4").css("background-image", 'url("../img/i-02.jpg")');
 
 }else{
 	$("#proyectos .proyectos .half #1 a").mouseenter(function () {
-		$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-01.jpg")');
+		$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-03.png")');
 	});
 	$("#proyectos .proyectos .half #1 a").mouseleave(function () {
 		$("#proyectos .proyectos .half #1").css("background-image", 'none');
