@@ -32,11 +32,25 @@ html
                             </g>
                         </svg>
         .descrip
-            .contenedor.half
+            .contenedor.half.de
+                .spects
+                    .sp
+                        .spec
+                            h2 Ubicación
+                            p San Pedro Garza García, N.L.
+                        .spec
+                            h2 Arquitecto
+                            p Lorem Ipsum Dolor
+                        .spec
+                            h2 Área de Construcción
+                            p 00,000 m2
+                        .spec
+                            h2 Año
+                            p 2014
                 .element.lead
                     h1 ¿Qué buscamos crear en cada proyecto?
-                    span Especificaciones del Proyecto
-                .element
+                    span.spe Especificaciones del Proyecto
+                .element.text
                     .par
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur dictum mauris. Praesent rhoncus varius justo, sit amet commodo purus. Integer vehicula quam ante, nec fermentum orci egestas sit amet. Mauris massa elit, aliquet sit amet venenatis imperdiet, commodo non sem.
                         br
@@ -45,5 +59,24 @@ html
                         br
                         br
                         p Duis at arcu ex. Fusce elementum finibus aliquam. Integer metus dolor, tempor vitae purus nec, elementum fermentum nulla. Duis tincidunt justo sapien, et condimentum enim aliquet a. Vivamus eleifend arcu sit amet faucibus euismod. Cras porta ligula eget sem efficitur volutpat
-            
+        .descriptiont
+            .contenedor.full-lead
+                .element
+                    h1 Somos una empresa inmobiliaria con una visión integral, enfocada en desarrollos sustentables de alto valor social y económico. 
+        .carrusel
+            #carrusel-items
+                .item
+                    img(src="/img/c-01.png", alt="")
+                .item
+                    img(src="/img/c-02.png", alt="")
+                .item
+                    img(src="/img/c-01.png", alt="")
+        .links
+            .contenedor.links-c
+                .element-l
+                    a(href="proyecto.html") nativa
+                    a(href="proyecto.html") La escondida
+                    a(href="proyecto.html") proyecto x
+                .elemento
+                    a(href="proyectos.html").cta Ver Más
         include _partials/footer

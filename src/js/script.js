@@ -199,6 +199,36 @@ if (window.matchMedia('(max-width: 750px)').matches)
 	});    
 }
 
+$('span.spe').on('click', function(){
+	$('.spects').toggleClass('spects-ri');
+});
+
+
+
+
+
+
+$('#carrusel-items').slick({
+	autoplay: true,
+	infinite: true,
+	pauseOnHover: false,
+	slidesToShow: 1,
+	arrows: false,
+	centerMode: true,
+	variableWidth: true,
+	responsive: [
+		{
+		  breakpoint: 750,
+		  settings: {
+			slidesToShow: 1,
+			centerMode: false,
+			variableWidth: false,
+		  }
+		}]
+  });
+
+
+
 
 
 });

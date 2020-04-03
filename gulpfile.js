@@ -3,7 +3,7 @@
 /*global require*/
 const autoprefixer = require('autoprefixer');
 const babel = require('gulp-babel');
-const browserSync = require('browser-sync');
+const browserSync = require('browser-sync').create();
 const changed = require('gulp-changed');
 const concat = require('gulp-concat');
 const data = require('gulp-data');
@@ -132,7 +132,7 @@ gulp.task('rebuild', ['pug'], function () {
  * Запускаем сервер browser-sync
  */
 gulp.task('browser-sync', function () {
-	browserSync({
+	browserSync.init({
 		server: {
 			baseDir: paths.public
 		},

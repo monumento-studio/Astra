@@ -35,3 +35,136 @@
                         width: 150px
                         path
                             fill: $white
+    .descrip
+        background-color: $gray
+        position: relative
+        overflow: hidden
+        .de
+            .spects-ri
+                right: 0 !important
+                transition: all 350ms ease-in-out
+            .element
+                border-bottom: none
+            .spects
+                position: absolute
+                top: 0
+                right: -50%
+                bottom: 0
+                width: 50%
+                background: $brown
+                color: $white
+                text-align: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                border: none !important
+                transition: all 350ms ease-in-out
+                .spec
+                    margin-top: 50px
+                    margin-bottom: 50px
+            .lead
+                border-right: solid 1px $black
+                span
+                    grid-row: 2/3
+                    grid-column: 2/5
+                    align-self: end
+                    color: $brown
+                    font-family: $neue-light
+                    cursor: pointer
+                    &:hover
+                        text-decoration: underline
+            .text
+                border-right: none
+    .descriptiont
+        margin-top: 50px
+        margin-bottom: 50px
+    .carrusel
+        padding-bottom: 50px
+        #carrusel-items
+            width: 100%
+            .item
+                margin-right: 20px
+                margin-left: 20px
+                img
+                    height: 500px
+                    width: auto
+    .links
+        margin-bottom: 50px
+        .links-c
+            border-top: solid 1px black
+            padding-top: 50px
+            .element-l
+                a
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    margin: 0 auto
+                    font-size: 3rem
+                    font-family: $neue-light
+                    &:hover
+                        text-decoration: underline
+            .elemento
+                text-align: center
+                margin-top: 50px
+@media (max-width: 990px)
+    #proyecto
+        #menu
+            ul
+                li
+                    &:nth-child(2)
+                        a
+                            border-bottom: solid 1px white !important
+        .full
+            margin-top: 80px !important
+        .descrip
+            background-color: $gray
+            position: relative
+            overflow: hidden
+            .de
+                .spects-ri
+                    right: 0 !important
+                    transition: all 350ms ease-in-out
+                .element
+                    border-bottom: none
+                .spects
+                    position: absolute
+                    top: 0
+                    right: -100%
+                    bottom: auto !important
+                    width: 100%
+                    background: $brown
+                    color: $white
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    border: none !important
+                    transition: all 350ms ease-in-out
+        .carrusel
+            padding-bottom: 50px
+            #carrusel-items
+                width: 100%
+                .item
+                    margin-right: 0
+                    margin-left: 0
+                    img
+                        height: auto
+                        width: 100%
+        .links
+            margin-bottom: 50px
+            .links-c
+                border-top: solid 1px black
+                padding-top: 50px
+                .element-l
+                    a
+                        text-align: center
+                        display: flex
+                        flex-direction: column
+                        margin: 0 auto
+                        font-size: 3rem
+                        font-family: $neue-light
+                        &:hover
+                            text-decoration: underline
+                .elemento
+                    text-align: center
+                    margin-top: 50px

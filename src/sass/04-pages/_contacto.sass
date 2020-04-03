@@ -1,0 +1,87 @@
+#contacto
+    #menu
+        ul
+            li
+                &:nth-child(3)
+                    a
+                        border-bottom: solid 1px black
+    .contacto-lead
+        background-color: $gray
+        margin-top: 120px
+        h1
+            font-size: 4rem
+            text-align: center
+            padding: 100px 0
+    .contacto-grid
+        background: $gray
+        padding-bottom: 100px
+        .half
+            border-bottom: none !important
+            &:last-child
+                border-top: none
+            .element.text
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                p
+                    font-family: $neue-light
+                .links
+                    span
+                        font-family: $neue-light
+                    a
+                        &:last-child
+                            font-family: $neue-light
+                            text-transform: lowercase
+                        &:hover
+                            text-decoration: underline
+            .element.map
+                padding: 0
+                display: block
+                position: relative
+                overflow: hidden
+                padding-top: 56.25%
+                iframe
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    border: 0
+
+@media (max-width: 990px)
+    #contacto
+        #menu
+            ul
+                li
+                    &:nth-child(3)
+                        a
+                            border-bottom: solid 1px white !important
+        .contacto-lead
+            margin-top: 80px
+@media (max-width: 750px)
+    #contacto
+        .contacto-lead
+            h1
+                font-size: 4rem
+                text-align: center
+                padding: 100px 0
+        .contacto-grid
+            background: $gray
+            .half
+                border-bottom: none !important
+                &:last-child
+                    border-top: none
+                .element.text
+                    padding: 100px 0
+                    p
+                        font-family: $neue-light
+                    .links
+                        span
+                            font-family: $neue-light
+                        a
+                            &:last-child
+                                font-family: $neue-light
+                                text-transform: lowercase
+                            &:hover
+                                text-decoration: underline

@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        title Astra | Contacto
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+        meta(name="description" content="")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet", href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+    body
+      .container#contacto
+        include _partials/menu
+        .contacto-lead
+            h1 Ponte en contacto con nosotros.
+        .contacto-grid
+            .contenedor.half
+                .element.text
+                    p Padre Mier Nº578 Ote  |  64000 Obispado  |  Monterrey, NL
+                .element.text
+                    .links
+                        p <span>T</span> <a href="tel:8181301000"> +52 (81) 8130 1000</a>  |  <a href="mailto:contacto@byastra.com">contacto@byastra.com </a>
+            .contenedor.half
+                .element.map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.10477825032!2d-100.31321778498095!3d25.66782118367944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be214f3de1fd%3A0xfe8ff19848c02493!2sGentor%20Padre%20Mier!5e0!3m2!1ses!2smx!4v1585871855132!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                .element.form
+                    form
+                        .inputs
+                            input(type="text" placeholder="Nombre")
+                            input(type="text" placeholder="Apellido")
+                            input(type="mail" placeholder="Correo")
+                            textarea(name="message" placeholder="Mensaje")
+                        span
+                            input(type="submit", value="Enviar").cta
+        
+        include _partials/footer
