@@ -19,6 +19,7 @@
                 width: 100%
                 height: 100%
                 h1
+                    text-transform: uppercase
                     font-family: $neue-light
                     font-size: 5rem
                     color: $white
@@ -45,6 +46,7 @@
                 transition: all 350ms ease-in-out
             .element
                 border-bottom: none
+                height: calc(100vh - 120px)
             .spects
                 position: absolute
                 top: 0
@@ -62,6 +64,11 @@
                 .spec
                     margin-top: 50px
                     margin-bottom: 50px
+                .x
+                    display: none
+                    img
+                        position: absolute
+                        width: 20px
             .lead
                 border-right: solid 1px $black
                 span
@@ -121,9 +128,17 @@
             position: relative
             overflow: hidden
             .de
+                border-top: none
                 .spects-ri
                     right: 0 !important
                     transition: all 350ms ease-in-out
+                    .x
+                        display: block
+                        img
+                            width: 20px
+                            position: absolute
+                            top: 20px
+                            right: 20px
                 .element
                     border-bottom: none
                 .spects
@@ -140,6 +155,10 @@
                     justify-content: center
                     border: none !important
                     transition: all 350ms ease-in-out
+                .lead
+                    border-right: none
+                    span
+                        margin-top: 100px
         .carrusel
             padding-bottom: 50px
             #carrusel-items

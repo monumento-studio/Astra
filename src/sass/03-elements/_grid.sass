@@ -75,6 +75,7 @@
                     border-top: none
                     border-left: none
                     padding: 10px 0
+                    font-family: $neue-light
                     &::-webkit-input-placeholder
                         color: $black
                     &::-moz-placeholder
@@ -86,30 +87,55 @@
                 textarea
                     height: 50%
                 input
-                    margin-bottom: 20px
+                    margin-bottom: 10px
+            span
+                text-align: center
 .footer
     display: grid
-    grid-template-columns: 5fr 6fr 5fr
+    grid-template-columns: repeat(16, 1fr)
     padding-top: 40px
     padding-bottom: 40px
+    .direccion
+        grid-column: 1/9
+        p
+            font-family: $neue-light
+        span
+            font-family: $century
+        .links
+            a
+                font-family: $century
+            span
+                font-family: $neue-light
+            a
+                &:last-child
+                    font-family: $neue-light
+                    text-transform: lowercase
+                &:hover
+                    text-decoration: underline
+    .social
+        grid-column: 9/13
+        a
+            text-transform: capitalize
+    .copy
+        grid-column: 15/17
     .icono
         display: none
     .descr
         display: none
     .social
-        text-align: center
+        text-align: left
         ul
             display: flex
             flex-direction: row
-            justify-content: center
+            justify-content: flex-start
             li
-                margin-left: 20px
+                margin-right: 20px
     .copy
         text-align: right
 @media (max-width: 990px)
     .footer
-        display: grid
-        grid-template-columns: 1fr
+        display: flex
+        flex-direction: column
         padding-top: 40px
         padding-bottom: 40px
         .icono
@@ -149,7 +175,7 @@
         grid-template-columns: 1fr
         border-top: solid 1px black
         .element
-            padding: 50px 0
+            padding: 50px 20px
             box-sizing: border-box
             border-bottom: solid 1px black
             height: auto !important
@@ -167,8 +193,13 @@
                 margin: 0 auto
                 text-align: center
             span
-                margin-top: 50px
+                margin-top: 200px
                 text-align: center
+                margin-left: auto
+                margin-right: auto
+        .element.bg
+            .img
+                margin-top: 200px
         .element.form
             padding-left: 0
             padding-right: 0
