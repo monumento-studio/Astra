@@ -17,32 +17,25 @@ $(function () {
 		autoplaySpeed: 5000,
 		draggable: false,
 	  });
-		  function derecha() {     
-			$('.derecha').slick({
-				autoplay: true,
-				fade: true,
-				pauseOnHover: false,
-				arrows: false,
-				speed: 1800,
-				autoplaySpeed: 5000,
-				draggable: false,
-			  });
-		 }
-	  setTimeout(derecha, 3500)
-
-
+	  $('.derecha').slick({
+		autoplay: true,
+		fade: true,
+		pauseOnHover: false,
+		arrows: false,
+		speed: 1800,
+		autoplaySpeed: 2500,
+		draggable: false,
+	  });
 
 
 	  $("#first a").mouseenter(function () {
 		$("#home .projects .element.bg").css("background-image", 'url("../img/bg-01.jpg")');
 		$("#home .projects .element.bg ul li a").css('color', 'white');
-		$("#home .projects .element.bg ul li#first a").css('border-bottom', 'solid 2px white');
 		$("#home .projects .element.bg svg path").css('fill', 'white');
 	});
 	$("#first a").mouseleave(function () {
 		$("#home .projects .element.bg").css('background-image', 'none');
 		$("#home .projects .element.bg ul li a").css('color', 'black');
-		$("#home .projects .element.bg ul li#first a").css('border-bottom', 'none');
 		$("#home .projects .element.bg svg path").css('fill', 'black');
 	});
 
@@ -51,13 +44,11 @@ $(function () {
 $("#second a").mouseenter(function () {
 	$("#home .projects .element.bg").css("background-image", 'url("../img/d-01.jpg")');
 	$("#home .projects .element.bg ul li a").css('color', 'white');
-	$("#home .projects .element.bg ul li#second a").css('border-bottom', 'solid 2px white');
 	$("#home .projects .element.bg svg path").css('fill', 'white');
 });
 $("#second a").mouseleave(function () {
 	$("#home .projects .element.bg").css('background-image', 'none');
 	$("#home .projects .element.bg ul li a").css('color', 'black');
-	$("#home .projects .element.bg ul li#second a").css('border-bottom', 'none');
 	$("#home .projects .element.bg svg path").css('fill', 'black');
 });
 
@@ -66,13 +57,11 @@ $("#second a").mouseleave(function () {
 $("#third a").mouseenter(function () {
 	$("#home .projects .element.bg").css("background-image", 'url("../img/i-01.jpg")');
 	$("#home .projects .element.bg ul li a").css('color', 'white');
-	$("#home .projects .element.bg ul li#third a").css('border-bottom', 'solid 2px white');
 	$("#home .projects .element.bg svg path").css('fill', 'white');
 });
 $("#third a").mouseleave(function () {
 	$("#home .projects .element.bg").css('background-image', 'none');
 	$("#home .projects .element.bg ul li a").css('color', 'black');
-	$("#home .projects .element.bg ul li#third a").css('border-bottom', 'none');
 	$("#home .projects .element.bg svg path").css('fill', 'black');
 });
 	
@@ -161,14 +150,14 @@ $("#nosotros .element#12 .uno .arrow").on("click", function(){
 
 if (window.matchMedia('(max-width: 750px)').matches)
 {
-	$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-03.png")');
+	$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-03.jpg")');
 	$("#proyectos .proyectos .half #2").css("background-image", 'url("../img/d-02.jpg")');
 	$("#proyectos .proyectos .half #3").css("background-image", 'url("../img/i-01.jpg")');
 	$("#proyectos .proyectos .half #4").css("background-image", 'url("../img/i-02.jpg")');
 
 }else{
 	$("#proyectos .proyectos .half #1 a").mouseenter(function () {
-		$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-03.png")');
+		$("#proyectos .proyectos .half #1").css("background-image", 'url("../img/bg-03.jpg")');
 	});
 	$("#proyectos .proyectos .half #1 a").mouseleave(function () {
 		$("#proyectos .proyectos .half #1").css("background-image", 'none');
@@ -246,8 +235,8 @@ $('#carrusel-items').slick({
     loadingParentElement: 'body', //animsition wrapper element
     loadingClass: 'animsition-loading',
     loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
+    timeout: true,
+    timeoutCountdown: 2000,
     onLoadEvent: true,
     browser: [ 'animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
